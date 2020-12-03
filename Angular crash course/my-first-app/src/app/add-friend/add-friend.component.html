@@ -1,0 +1,9 @@
+<form>
+  <label for="name">Name: </label>
+  <input type='text' name='name' [(ngModel)]="name" />
+  <label for="age">Age: </label>
+  <input type='number' name='age' [(ngModel)]="age" />
+  <label for="age">Hobby: </label>
+  <input type='text' name='hobby' [(ngModel)]="hobbies" />
+  <button type="submit" (click)="onAddFriend()">Add friend</button>
+</form>

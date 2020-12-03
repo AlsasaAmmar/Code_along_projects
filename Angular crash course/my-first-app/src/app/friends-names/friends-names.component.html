@@ -1,0 +1,8 @@
+<ul>
+  <li>{{friend.name}}</li>
+  <li>{{friend.age}}</li>
+  <li>Hobbies</li>
+  <ul>
+    <li *ngFor="let hobby of friend.hobbies">{{hobby}}</li>
+  </ul>
+</ul>
