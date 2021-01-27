@@ -1,0 +1,40 @@
+.sub_container {
+  height: 10vw;
+  width: 10vw;
+  border: 0.5vw rgba(255, 255, 255, 0.507) solid;
+  margin: 0;
+  padding: 0;
+}
+.text {
+  font-family: monospace;
+  margin: auto;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 7vw;
+}
+
+.a_spot,
+.c_spot,
+.g_spot,
+.h_spot {
+  border-top: 0;
+  border-bottom: 0;
+}
+.b_spot,
+.i_spot {
+  border: 0;
+}
+
+.c_spot,
+.e_spot,
+.f_spot {
+  border-right: 0;
+}
+.g_spot,
+.h_spot,
+.e_spot,
+.d_spot,
+.a_spot {
+  border-left: 0;
+}

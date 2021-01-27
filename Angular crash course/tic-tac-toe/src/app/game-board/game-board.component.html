@@ -1,0 +1,9 @@
+<div appClickListener>
+  <button (click)="onStartGame()">Start game</button>
+  <p *ngIf="gamePlaying">{{currentPlayer.sign}} is playing</p>
+  <p *ngIf="winner">The winner is {{winner.sign}}</p>
+  <div class="spots_container">
+    <app-square *ngFor="let spot of spots; let i = index" class='spot' (selectedSpot)=onSelectedSpot(i) [spot]="spot"
+      [i]="i"></app-square>
+  </div>
+</div>

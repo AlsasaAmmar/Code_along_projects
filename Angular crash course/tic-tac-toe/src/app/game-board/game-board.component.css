@@ -1,0 +1,10 @@
+.spots_container {
+  display: flex;
+  width: 30vw;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.spot {
+  box-sizing: border-box;
+  width: 33.33%;
+}
