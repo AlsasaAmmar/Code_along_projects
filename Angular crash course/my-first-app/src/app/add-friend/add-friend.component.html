@@ -1,9 +1,9 @@
 <form>
   <label for="name">Name: </label>
-  <input type='text' name='name' [(ngModel)]="name" />
+  <input type='text' name='name' #name />
   <label for="age">Age: </label>
-  <input type='number' name='age' [(ngModel)]="age" />
+  <input type='number' name='age' #age />
   <label for="age">Hobby: </label>
-  <input type='text' name='hobby' [(ngModel)]="hobbies" />
-  <button type="submit" (click)="onAddFriend()">Add friend</button>
+  <input type='text' name='hobby' #hobbies />
+  <button type="submit" (click)="onAddFriend(name, age, hobbies)">Add friend</button>
 </form>

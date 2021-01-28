@@ -5,13 +5,19 @@ import { AppComponent } from './app.component';
 import { AmmarComponent } from './ammar/ammar.component';
 import { FriendsNamesComponent } from './friends-names/friends-names.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
+import { OddComponent } from './game/odd/odd.component';
+import { GameControlComponent } from './game/game-control/game-control.component';
+import { EvenComponent } from './game/even/even.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AmmarComponent,
     FriendsNamesComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    OddComponent,
+    GameControlComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule, FormsModule

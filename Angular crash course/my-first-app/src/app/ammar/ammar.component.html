@@ -2,13 +2,16 @@
 <input type="text" name='userName' [(ngModel)]="userName" />
 <button class='btn btn-primary'(click)='onClick()' [disabled]='!userName'>Click me please </button>
 <!-- you need to use a js obj when you want to use ngStyle -->
-<h1 *ngIf="showName; else noName" [ngStyle]="{color: 'red'}"> Your user name is {{userName}} </h1>
-<ng-template [ngClass]="{online : showName}"  #noName> no name my man! </ng-template>
+<h1 *ngIf="showName; else noName" [ngStyle]="{color: 'red'}">
+  Your user name is {{userName}} </h1>
+<ng-template [ngClass]="{online : showName}"  #noName>
+  no name my man! </ng-template>
 <!-- <h4 *ngFor='let name of sayItBaby' >{{name}} </h4> -->
 <hr>
 
 <button (click)="show()">display details</button>
 <p *ngIf="showPara">wabaldabdab</p>
 <ul>
-  <li [ngClass]="{online: sayItBaby.length < 5 }" class='online' *ngFor='let num of sayItBaby'>{{num}}</li>
+  <li [ngClass]="{online: sayItBaby.length < 5 }"
+  class='online' *ngFor='let num of sayItBaby'>{{num}}</li>
 </ul>

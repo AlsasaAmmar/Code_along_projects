@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-friend',
@@ -6,16 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-friend.component.css'],
 })
 export class AddFriendComponent implements OnInit {
-  friend: {
+  @Output() friendCreated = new EventEmitter<{
     name: string;
     age: number;
     hobbies: string[];
-  };
+  }>();
 
   constructor() {}
 
   ngOnInit(): void {}
-  onAddFriend() {
-    console.log('hi');
+
+  onAddFriend(
+    name: HTMLInputElement,
+    age: HTMLInputElement,
+    hobbies: HTMLInputElement
+  ) {
+    // this.friendCreated.emit({
+    //   name: name.value,
+    //   age: age.value,
+    //   hobbies: [hobbies.value],
+    // });
   }
 }
